@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/rock-and-roll.png"
+    />
+    <title>Rock 'n' Go</title>
+  </head>
+
+  <body>
+    <header class="header-principal">
+      <img
+        class="logo"
+        src="img/rock-and-roll.png"
+      />
+      <h1>Rock 'n' Go</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="Top10.html">Top 10</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="nosso-contato">
+        <h2>Nosso contato</h2>
+        <p>Gabriel Paulino - gmanoelipaulino@gmail.com</p>
+        <p>Jean Campos - Jeanrepresenta@yahoo.com.br</p>
+        <p>João Vitor Dellarmelina - jvmd258@gmail.com</p>
+        <p>Kauan Modolo - kauanmodolo@hotmail.com</p>
+        <p>Pedro Henrique Pompermayer - contato.peaga2@gmail.com</p>
+      </div>
+      <div class="fale-conosco">
+        <h2>Fale conosco</h2>
+        <p>
+          Se você tiver alguma pergunta, sugestão ou comentário, por favor,
+          preencha o formulário abaixo e entraremos em contato o mais breve
+          possível:
+        </p>
+      </div>
+      <form action="enviar.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
