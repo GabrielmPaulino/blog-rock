@@ -19,6 +19,8 @@ header {
 
 }
 
+
+
 .post-header {
   background-color: #291716;
   color: crimson;
@@ -29,6 +31,88 @@ header {
   align-items: center;
   border: 1px;
   border-radius: 10px;
+
+}
+
+
+
+
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 30px;
+}
+
+.botao-menu {
+  height: 50px;
+  width: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+.botao-menu:hover {
+  height: 52px;
+  width: 52px;
+
+
+}
+
+.opcoes-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #A8150E;
+  min-width: 350px;
+  z-index: 1;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.opcoes-menu p {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  font-family: serif;
+
+
+}
+
+.opcoes-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+
+}
+
+
+
+.opcoes-menu a:hover {
+  color: white;
+  font-size: 24px;
+
+
+}
+
+.opcoes-menu:hover {
+  background-color: #A8150E;
+
+
+}
+
+.menu:hover .opcoes-menu {
+  display: block;
+
 }
 
 
@@ -42,12 +126,12 @@ header img.logo {
   height: 170px;
   border-radius: 20px;
   cursor: pointer;
-  transition(0.4s, ease);
+  transition: (0.4s, ease);
 }
 
 header img.logo:hover {
-  width: 220px;
-  height: 175px;
+  width: 212px;
+  height: 172px;
 
 }
 
@@ -76,7 +160,7 @@ nav img {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  transitio(0.4s, ease);
+  transition: (0.4s, ease);
 }
 
 nav img:hover {
@@ -113,17 +197,36 @@ article {
   border-radius: 10px;
 }
 
-article h2 {
+.post-header h2 {
   margin-top: 0;
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 34px;
+  margin-bottom: 1px;
+  color: #A8150E;
+}
+
+.post-header p {
+  color: #A8150E;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 00px;
+
+
+
 }
 
 article p {
   margin: 15px 0 10px 0;
   font-size: 17px;
   line-height: 1.5;
+  color: black;
+
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
 }
+
+
 
 article ol {
   margin: 0 auto;
@@ -334,10 +437,15 @@ audio {
   padding: 0px;
   margin-bottom: 0px;
   font-size: 10px;
+  text-align: center;
+  margin-left: -28px;
 }
+
+
 
 li {
   font-size: 20px;
   font-family: serif;
+  margin-top: 2px;
 
 }
