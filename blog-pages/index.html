@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/rock-and-roll.png" />
+  <title>Rock na Alma</title>
+</head>
+
+<body>
+  <header class="header-principal">
+    <div class="menu">
+      <img src="img/menu.png" class="botao-menu">
+      <div class="opcoes-menu">
+        <p>POSTAGENS DA SEMANA</p>
+        <a href="Top10.html">Top 10 músicas</a>
+        <a href="relaxar.html">Melhores músicas para relaxar</a>
+        <a href="melhores-albuns.html">Melhores albuns já feitos</a>
+        <a href="historia-rock.html">Historia do Rock</a>
+        <a href="post-guitarra.html">Escolha a guitarra certa para você</a>
+      </div>
+    </div>
+    <a href="index.html"> <img class='logo' src="img/logo.png"></a>
+    <nav>
+      <ul>
+        <li><a href="Top10.html"> <img class="top-10" src="img/top-10.png" alt="top-10"> </a></li>
+        <li><a href="contato.html"><img src="img/botao-contato.png" alt="contato"></a></li>
+        <li><a href="sobre.html"><img src="img/botao-sobre.png" alt="sobre"></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <header class="post-header">
+        <h2>Sejam bem-vindos!</h2>
+      </header>
+      <p>
+        Bem-vindos à Rock na Alma nosso Blog sobre música com foco em muito Rock 'n' Roll, 
+        aqui você vai ficar por dentro de tudo que está acontecendo no
+        mundo do Rock bem como acompanhar nossas opiniões sobre o assunto.
+        Para nos conhecer melhor, acesse a página <a href="sobre.html">Sobre</a>.
+      </p>
+    </article>
+    <div class="post-container">
+      <a href="post-guitarra.html">
+      <h2>Escolha a guitarra certa para você</h2>
+      </a>
+      <p>Faça a escolha certa para seu estilo</p>
+      <a href="post-guitarra.html"><img class="post-image" src="img/guitarra_img.jpg">
+      <br> <a href="post-guitarra.html">Leia mais</a>
+    </div>
+    <div class="post-container">
+      <a href="relaxar.html">
+        <h2>As melhores músicas para relaxar</h2>
+      </a>
+      <p>Descanse a mente após aquele rock pauleira</p>
+      <a href="relaxar.html"><img class="post-image" src="img/relaxar_img.jpg">
+        <br> <a href="relaxar.html">Leia mais</a>
+    </div>
+    <div class="post-container">
+      <a href="melhores-albuns.html">
+        <h2>Os melhores albúns de 2023 (até agora)</h2>
+      </a>
+      <p>Segue a dica!</p>
+      <a href="melhores-albuns.html"><img class="post-image" src="img/melhores_albuns_img.webp">
+        <br> <a href="melhores-albuns.html">Leia mais</a>
+    </div>
+    <div class="post-container2 ">
+    <span class="post-container1">
+      <a href="historia-rock.html">
+        <h2>História do Rock</h2>
+      </a>
+      <p>Confira!</p>
+      <a href="historia-rock.html"><img class="post-image" src="img/rock-historia.jpg">
+        <br> <a href="historia-rock.html">Leia mais</a>
+    </span>
+    </div>
+  </main>
+  <button class="veja-mais-btn">Veja Mais</button>
+  <script type="text/javascript">
+    const vejamaisbtn = document.querySelector(".veja-mais-btn");
+    const postcontainer1 = document.querySelector(".post-container1");
+    vejamaisbtn.addEventListener("click", (e) => {
+      postcontainer1.classList.toggle("post-container1");
+      if (vejamaisbtn.innerText === "Veja Mais") {
+        vejamaisbtn.innerText = "Veja Menos";
+      } else {
+        vejamaisbtn.innerText = "Veja Mais";
+      }
+    });
+  </script>
+  <aside>
+    <h3>Posts recentes</h3>
+    <ul>
+      <li><a href="relaxar.html">As melhores músicas para relaxar</a></li>
+      <li><a href="historia-rock.html">A história do rock and roll</a></li>
+      <li><a href="melhores-albuns.html">Os melhores álbuns de 2023 (até agora)</a></li>
+      <li><a href="post-guitarra.html">Escolha a guitarra certa para você</a></li>
+      
+    </ul>
+    </main>
+  </aside>
+  <div class="container">
+    <footer>
+      <p>Copyright © 2023 - Rock na Alma</p>
+    </footer>
+  </div>
+</body>
+
+</html>
