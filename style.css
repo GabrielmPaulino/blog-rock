@@ -286,7 +286,8 @@ aside a:hover {
 }
 
 footer {
-  background-color: #333;
+  background-color: #291716;
+  color: crimson;
   position: absolute;
   left: 0;
   bottom: 0;
